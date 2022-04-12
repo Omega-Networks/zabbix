@@ -1,0 +1,9 @@
+// Zabbix Pre-Processing Script
+// For Bosch IP Camera RPC Call
+//  Created by: Omega Networks
+
+var out = '';
+for (var i = 1, nums = value.split("00 "); i < nums.length; i++) {
+  out += String.fromCharCode(parseInt(nums[i], 16));
+};
+return out;
